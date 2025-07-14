@@ -1,0 +1,30 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "z_pub_c",
+    srcs = [
+        "src/parse_args.h",
+        "src/z_pub.c"
+    ],
+    cxxopts = [
+        "-Wno-unused-variable"
+    ],
+    deps = [
+        "@zenoh_c",
+    ],
+)
+
+cc_binary(
+    name = "z_pub_cpp",
+    srcs = [
+        "src/getargs.hxx",
+        "src/z_pub.cxx"
+    ],
+    cxxopts = [
+        "-Wno-sign-compare",
+        "-Wno-catch-value"
+    ],
+    deps = [
+        "@zenoh_cpp",
+    ],
+)

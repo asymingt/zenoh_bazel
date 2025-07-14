@@ -1,0 +1,8 @@
+[submodule "modules/zenoh-c"]
+	path = modules/zenoh-c
+	url = https://github.com/asymingt/zenoh-c.git
+	branch = asymingt/bazel-build
+[submodule "modules/zenoh-cpp"]
+	path = modules/zenoh-cpp
+	url = https://github.com/asymingt/zenoh-cpp.git
+	branch = asymingt/bazel-build

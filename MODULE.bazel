@@ -1,0 +1,20 @@
+module(
+    name = "zenoh_test",
+    version = "0.0.0",
+    compatibility_level = 1,
+)
+
+bazel_dep(name = "rules_cc", version = "0.1.2")
+
+bazel_dep(name = "zenoh_c", version = "0.0.0")
+local_path_override(
+    module_name = "zenoh_c",
+    path = "../zenoh_c",
+)
+
+bazel_dep(name = "zenoh_cpp", version = "0.0.0")
+local_path_override(
+    module_name = "zenoh_cpp",
+    path = "../zenoh_cpp",
+)
+
