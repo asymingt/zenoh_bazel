@@ -33,5 +33,5 @@ bazel test @zenoh_cpp//...
 
 # Things that don't work yet
 
-Zeno-C tests: the ones that don't pass upstream are disabled.
-Zenoh features: shared memory and unstable.
+- Zenoh-C/C++ tests: the ones that don't pass upstream are disabled.
+- Zenoh-C features: shared memory and unstable features don't work yet.
