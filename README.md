@@ -35,3 +35,4 @@ bazel test @zenoh_cpp//...
 
 - Zenoh-C/C++ tests: the ones that don't pass upstream are disabled.
 - Zenoh-C features: shared memory and unstable features don't work yet.
+- Zenoh-C hermeticity: the cbindgen implementation currently makes a call to cargo, which escapes the Bazel sandbox.
